@@ -3,22 +3,20 @@
 /**
  * print_square - prints a square, followed by a new line;
  * @size: size of the square
+ * Return: no return
  */
 void print_square(int size)
 {
-	int i = 0, ii;
+	int i, j;
 
-	while (i < n && n > 0)
+	for (i = 0; i < size; i++)
 	{
-		ii = 0;
-		while (ii < n)
+		for (j = 0; j < size; j++)
 		{
-			_putchar('#');
-			ii++;
+			_putchar(35);
 		}
-		_putchar('\n');
-		i++;
+		if (i != size - 1)
+			_putchar('\n');
 	}
-	if (i == 0)
-		_putchar('\n');
+	_putchar('\n');
 }
