@@ -6,13 +6,12 @@ nclude "main.h"
  */
 int _strlen(char *s)
 {
-	int longi = 0;
-
-	while (*(s + longi)!= '\0')
+	int p = 0;
+	/*incremeant up to when the last character is NULL,\0*/
+	while (*(s + p) != 0)
 	{
-		longi++;
-		s++;
+		p++;
 	}
 
-	return (longi);
+	return (p);
 }
